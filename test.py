@@ -2,8 +2,8 @@ import pprint
 import sys
 import platform
 
-import lightgbm
 import torch
+import lightgbm
 import threadpoolctl
 
 print('version: ', sys.version, flush=True)
