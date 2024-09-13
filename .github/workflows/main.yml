@@ -1,3 +1,5 @@
+name: main
+on: [push]
 jobs:
   run_tests:
     runs-on: macos-14
