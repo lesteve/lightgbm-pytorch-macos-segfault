@@ -1,0 +1,12 @@
+jobs:
+  run_tests:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - run: brew install libomp
+      - run: pip install torch 'numpy<2' lightgbm threadpoolctl
+      - run: pip list
+      - run: python test.py
